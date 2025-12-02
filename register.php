@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = htmlspecialchars($_POST['username']);
     $email    = htmlspecialchars($_POST['email']);
 
-    $conn = new mysqli("localhost", "siteuser", "kh", "site_db");
+    $conn = new mysqli("localhost", "root", "", "site_db");
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
