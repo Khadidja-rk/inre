@@ -132,7 +132,7 @@
 <body>
 
     <?php
-    $conn = new mysqli("localhost", "root", "", "site_db", 3307);
+    $conn = new mysqli("localhost", "phpuser", "eve", "site_db");
 
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
